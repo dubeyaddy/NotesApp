@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signin">SignIn</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="auth_failed">auth failed</string>
+    <string name="notes">Notes</string>
+    <string name="reminders">Reminders</string>
+    <string name="create_new_notes">Create new notes</string>
+    <string name="archive">Archive</string>
+    <string name="deleted">Deleted</string>
+    <string name="settings">Settings</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="navigation_drawer_open">navigation drawer open</string>
+    <string name="navigation_drawer_close">navigation drawer close</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="no_notes">No Notes</string>
+</resources>

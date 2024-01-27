@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_naviagtion"
+    app:startDestination="@id/nav_notes">
+
+
+    <fragment
+        android:id="@+id/nav_label"
+        android:name="com.example.notes.ui.CreateFragment"
+        android:label="Add Notes"
+        tools:layout="@layout/fragment_create_new_label">
+
+        <action
+            android:id="@+id/action_save"
+            app:destination="@id/nav_notes" />
+        <argument
+            app:argType="com.example.notes.model.Note"
+            android:name="Note"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_deleted"
+        android:name="com.example.notes.ui.DeleteFragment"
+        android:label="DeleteFragment"
+        tools:layout="@layout/fragment_deleted">
+        <action
+            android:id="@+id/action_nav_deleted_to_nav_notes"
+            app:destination="@id/nav_notes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.example.notes.ui.NoteFragment"
+        android:label="My Notes" >
+
+        <action
+            android:id="@+id/note_add"
+            app:destination="@id/nav_label" />
+    </fragment>
+</navigation>
